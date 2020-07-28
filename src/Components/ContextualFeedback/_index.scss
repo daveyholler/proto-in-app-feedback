@@ -1,0 +1,32 @@
+.euiContextualFeedback {
+  padding: 1rem;
+  border-radius: $euiBorderRadius;
+
+  &.euiContextualFeedback__toast {
+    @include euiBottomShadowFlat;
+    position: fixed;
+    bottom: 1rem;
+    left: calc(50% - 15rem);
+    width: 30rem;
+    animation-name: toastUp;
+    animation-duration: $euiAnimSpeedNormal;
+    animation-timing-function: $euiAnimSlightBounce;
+    animation-fill-mode: forwards;
+  }
+
+  &.euiContextualFeedback__inline {
+    border: $euiBorderThin;
+    width: calc(100% - 1rem);
+    margin: .5rem;
+  }
+
+}
+
+@keyframes toastUp {
+  0% {
+    transform: translateY(30rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

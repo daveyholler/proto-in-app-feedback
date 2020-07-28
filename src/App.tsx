@@ -6,7 +6,7 @@ import {
   Link
 } from "react-router-dom";
 
-import { Sample } from './Components/Sample';
+import { Home } from './Components/Home/Home';
 import Header from './Components/Header/Header';
 
 import './App.css';
@@ -18,7 +18,7 @@ function App() {
         <Header theme />
         <Switch>
           <Route exact path="/">
-            <Sample />
+            <Home />
           </Route>
           {/* <Route component={ WithNavigation } />*/}
         </Switch>
